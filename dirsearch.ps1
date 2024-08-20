@@ -22,4 +22,4 @@ if (!($search) || !($preview)) {
 }
 
 
-$search | fzf --preview $preview | Set-Location 
+Write-Output '../' $search | fzf --preview $preview | Set-Location 
